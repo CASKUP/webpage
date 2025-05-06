@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Encabezados y Párrafos</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Mi Página Web</h1>
+    </header>
+
+
+    <section>
+        <h2>¿Quién Soy?</h2>
+        <p>Hola, soy un desarrollador web. Me encanta crear páginas web simples y eficientes.</p>
+    </section>
+
+
+    <section>
+        <h2>Mis Proyectos</h2>
+        <p>Aquí puedes encontrar algunos de los proyectos en los que he trabajado:</p>
+        <ul>
+            <li>Desarrollo de una tienda online</li>
+            <li>Creación de una página personal</li>
+            <li>Aplicación de tareas pendientes</li>
+        </ul>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Mi Nombre. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
