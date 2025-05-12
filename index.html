@@ -48,4 +48,24 @@
         <p>&copy; 2025.</p>
     </footer>
 </body>
+    <body>
+    <div class="container">
+        <h1>Bienvenido a mi página</h1>
+        <p>Visitas: <span id="contador"></span></p>
+        <a href="https://www.ejemplo.com" class="button">Ir a otra página</a>
+    </div>
+
+    <script>
+        // Contador de visitas usando localStorage
+        if (localStorage.getItem("visitas")) {
+            let visitas = parseInt(localStorage.getItem("visitas"));
+            visitas++;
+            localStorage.setItem("visitas", visitas);
+            document.getElementById("contador").innerText = visitas;
+        } else {
+            localStorage.setItem("visitas", 1);
+            document.getElementById("contador").innerText = 1;
+        }
+    </script>
+</body>
 </html>
