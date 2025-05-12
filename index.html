@@ -3,52 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Encabezados y Párrafos</title>
-</head>
-<body>
-    <header>
-        <h1>Bienvenidos a Mi Página Web</h1>
-    </header>
-
-
-    <section>
-        <h2>¿Quién Soy?</h2>
-        <p>Que onda. soy daniel castorena. 😎😎😎😎</p>
-    </section>
-
-
-    <section>
-        <h2>Mis Proyectos</h2>
-        <p>Aquí puedes encontrar algunos de los proyectos en los que he trabajado:</p>
-        <ul>
-        
-            <li>Creación de una página personal</li>
-            
-        </ul>
-    </section>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fondo de Color</title>
+    <title>Página con Imagen de Fondo</title>
     <style>
         body {
-            background-color: lightblue; /* Cambia "lightblue" por el color que prefieras */
+            background-image: url('https://source.unsplash.com/random'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding-top: 100px;
+        }
+        .button {
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola, mundo!</h1>
-</body>
-</html>
-
-    <footer>
-        <p>&copy; 2025.</p>
-    </footer>
-</body>
-    <body>
     <div class="container">
         <h1>Bienvenido a mi página</h1>
         <p>Visitas: <span id="contador"></span></p>
@@ -69,3 +49,4 @@
     </script>
 </body>
 </html>
+
