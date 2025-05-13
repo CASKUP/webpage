@@ -36,14 +36,18 @@
     </div>
 
     <script>
-        // Contador de visitas usando localStorage
+        <h1>Bienvenido</h1>
+    <p>Visitas en este navegador: <span id="contador"></span></p>
+
+    <script>
+        // Obtener el número de visitas desde localStorage
         if (localStorage.getItem("visitas")) {
             let visitas = parseInt(localStorage.getItem("visitas"));
             visitas++;
             localStorage.setItem("visitas", visitas);
             document.getElementById("contador").innerText = visitas;
         } else {
-            localStorage.setItem("visitas", 1,2,3,4,etc);
+            localStorage.setItem("visitas", 1);
             document.getElementById("contador").innerText = 1;
         }
     </script>
