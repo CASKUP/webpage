@@ -12,4 +12,41 @@
             text-align: center;
             color: white;
             font-family: Arial, sans-serif;
-   
+        }
+        .container {
+            padding-top: 100px;
+        }
+        .button {
+            background-color: red
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a mi página</h1>
+        <p>Visitas: <span id="contador"></span></p>
+        <a href="pagina2.html" class="button">Ir a otra página</a>
+    </div>
+
+    <script>
+        // Contador de visitas usando localStorage
+        if (localStorage.getItem("visitas")) {
+            let visitas = parseInt(localStorage.getItem("visitas"));
+            visitas++;
+            localStorage.setItem("visitas", visitas);
+            document.getElementById("contador").innerText = visitas;
+        } else {
+            localStorage.setItem("visitas", 1);
+            document.getElementById("contador").innerText = 1;
+        }
+    </script>
+</body>
+</html>
+
